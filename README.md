@@ -11,12 +11,12 @@ Oliveiros Cavalcanti de Oliveira Neto, 117110810
 - [x] HTML da página mais importante (página inicial);
 - [x] Backend básico;
 
-## Entrega 01:
+# Entrega 01:
 - Acessar pasta "/frontend";
 - Abrir o arquivo "vistasou"prototype.html";
 - O html representa a página inicial da loja SOU.
 
-## Entrega 02:
+# Entrega 02:
 - Acessar pasta "/backend";
 - Inicializar aplicação com comando "npm start";
 - O GET de "/users" e "/products" retorna todos os elementos;
