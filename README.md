@@ -9,4 +9,15 @@ Oliveiros Cavalcanti de Oliveira Neto, 117110810
 ## Lista de implementações:
 
 - [x] HTML da página mais importante (página inicial);
-- [ ] Backend básico;
+- [x] Backend básico;
+
+# Entrega 01:
+- Acessar pasta "/frontend";
+- Abrir o arquivo "vistasou"prototype.html";
+- O html representa a página inicial da loja SOU.
+
+# Entrega 02:
+- Acessar pasta "/backend";
+- Inicializar aplicação com comando "npm start";
+- O GET de "/users" e "/products" retorna todos os elementos;
+- O POST de "/users" adiciona um usuário na lista de usuários;
