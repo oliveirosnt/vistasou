@@ -25,3 +25,7 @@ Oliveiros Cavalcanti de Oliveira Neto, 117110810
 - Inicializar aplicação com comando "npm start";
 - O GET de "/users" e "/products" retorna todos os elementos;
 - O POST de "/users" adiciona um usuário na lista de usuários;
+
+# Entrega 03:
+- O estado interno do component Product é alterado com o click do checkbox;
+- O componente Product recebe as props (nome e valor) do componente Products;
