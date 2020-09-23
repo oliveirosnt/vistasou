@@ -2,18 +2,19 @@
 Oliveiros Cavalcanti de Oliveira Neto, 117110810
 
 ## Comando:
-- Tanto no front quanto no back basta dar um "npm install" e depois "npm start" e acessar localhost:3000.
+- Tanto no front quanto no back basta dar um "npm install", depois "npm start" e  por último acessar localhost:3000.
 
 ## Consiste no comercio eletrônico da marca de roupas SOU.
-- A tela inicial tera como base uma loja padrão, com um banner e produtos exibidos;
+- A tela inicial terá como base uma loja padrão, com um banner e produtos exibidos;
 - Os produtos devem ter nome, preço e descrição;
 - Usuários podem se cadastrar no site e fazer login para ver seus produtos favoritos;
 
 ## Lista de implementações:
-
 - [x] HTML da página mais importante (página inicial);
 - [x] Backend básico;
 - [x] Divisão em componentes usando react da página principal;
+- [x] Um componente afetado por uma prop (Product);
+- [x] Componente com estado interno alterado (Product);
 
 # Entrega 01:
 - Acessar pasta "/frontend";
