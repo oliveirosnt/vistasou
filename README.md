@@ -13,6 +13,7 @@ Oliveiros Cavalcanti de Oliveira Neto, 117110810
 
 - [x] HTML da página mais importante (página inicial);
 - [x] Backend básico;
+- [x] Divisão em componentes usando react da página principal;
 
 # Entrega 01:
 - Acessar pasta "/frontend";
