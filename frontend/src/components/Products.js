@@ -1,45 +1,35 @@
 import React from 'react';
 import vestido from '../images/vestido.jpg'
+import Product from './Product';
 
-function Products() {
-    return (
-        <div class="products">
-            <ul>
-                <li>
-                    <div class="product_01">
-                    <img src={vestido} alt="vestido" />
-                    <h3>Vestido azul</h3>
-                    <h3>100,00R$</h3>
-                    <button>Favoritar</button>
-                    </div>
-                </li>
-                <li>
-                    <div class="product_02">
-                    <img src={vestido} alt="vestido" />
-                    <h3>Vestido azul</h3>
-                    <h3>100,00R$</h3>
-                    <button>Favoritar</button>
-                    </div>
-                </li>
-                <li>
-                    <div class="product_03">
-                    <img src={vestido} alt="vestido" />
-                    <h3>Vestido azul</h3>
-                    <h3>100,00R$</h3>
-                    <button>Favoritar</button>
-                    </div>
-                </li>
-                <li>
-                    <div class="product_04">
-                    <img src={vestido} alt="vestido" />
-                    <h3>Vestido azul</h3>
-                    <h3>100,00R$</h3>
-                    <button>Favoritar</button>
-                    </div>
-                </li>
-            </ul>
-      </div>
-    )
+
+
+class Products extends React.Component {
+
+    renderProduct(_name, _value){
+        return <Product name={_name} value={_value}></Product>
+    }
+
+    render () {
+        return (
+            <div class="products">
+                <ul>
+                    <li>
+                        {this.renderProduct("Vestido Azul", "119,90R$")}
+                    </li>
+                    <li>
+                        {this.renderProduct("Cropped Vermelho", "79,90R$")}
+                    </li>
+                    <li>
+                        {this.renderProduct("Calça Botões", "89,90R$")}
+                    </li>
+                    <li>
+                        {this.renderProduct("Blusa Gola Alta", "69,90R$")}
+                    </li>
+                </ul>
+            </div>
+        )
+    }
 }
 
 export default Products;
