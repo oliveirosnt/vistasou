@@ -32,4 +32,4 @@ Oliveiros Cavalcanti de Oliveira Neto, 117110810
 - O componente Product recebe as props (nome e valor) do componente Products;
 
 # Entrega 04:
-- O componente pai "Products" manda de acordo com seu estado as props do componente filhos "Product";
+- O componente pai "Products" manda de acordo com seu estado as props do componente filho "Product";
