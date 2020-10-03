@@ -30,3 +30,6 @@ Oliveiros Cavalcanti de Oliveira Neto, 117110810
 # Entrega 03:
 - O estado interno do component Product é alterado com o click do checkbox;
 - O componente Product recebe as props (nome e valor) do componente Products;
+
+# Entrega 04:
+- O componente pai "Products" manda de acordo com seu estado as props do componente filhos "Product";
