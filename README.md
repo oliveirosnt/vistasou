@@ -33,3 +33,10 @@ Oliveiros Cavalcanti de Oliveira Neto, 117110810
 
 # Entrega 04:
 - O componente pai "Products" manda de acordo com seu estado as props do componente filho "Product";
+
+# Entrega 05:
+- Não deu pra fazer :(
+
+# Entrega 06:
+- Testes do componente de produto;
+- Pra rodar os testes basta chegar até o diretório do frontend e rodar o comando "npm test";
