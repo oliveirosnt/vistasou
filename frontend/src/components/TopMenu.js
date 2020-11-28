@@ -8,6 +8,7 @@ function TopMenu() {
             <li><a><Link to="/">SOU.</Link></a></li>
             <li><a><Link to="/catalogue">Catálogo</Link></a></li>
             <li><a><Link to="/about">Sobre nós</Link></a></li>
+            <li><a><Link to="/newProduct">Cadastrar</Link></a></li>
             </ul>
         </nav>
     )

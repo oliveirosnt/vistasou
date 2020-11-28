@@ -1,8 +1,8 @@
 import React from 'react';
-import './stylesheet.css'
-import TopMenu from '../../components/TopMenu'
-import Banner from '../../components/Banner'
-import Products from '../../components/Products'
+import './stylesheet.css';
+import TopMenu from '../../components/TopMenu';
+import Banner from '../../components/Banner';
+import Products from '../../components/Products';
 import DownMenu from '../../components/DownMenu';
 
 function Main(){
@@ -18,7 +18,7 @@ function Main(){
         <Banner></Banner>
         <Products></Products>
         <Banner></Banner>
-        <DownMenu></DownMenu>    
+        <DownMenu></DownMenu>  
 
         </div>
     );
