@@ -1,13 +1,13 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 
 function TopMenu() {
     return (
         <nav class="top_menu">
             <ul>
-            <li><a>SOU.</a></li>
-            <li><a>Catálogo</a></li>
-            <li><a>Entrar</a></li>
-            <li><a>Favoritos</a></li>
+            <li><a><Link to="/">SOU.</Link></a></li>
+            <li><a><Link to="/catalogue">Catálogo</Link></a></li>
+            <li><a><Link to="/about">Sobre nós</Link></a></li>
             </ul>
         </nav>
     )

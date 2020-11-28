@@ -6,12 +6,12 @@ class Product extends React.Component{
     constructor(props) {
         super(props);
         this.state = { 
-          check: false
+          fav: false
         };
       }
 
     handleChange() {
-        this.setState({...this.state, check:!this.state.check})
+        this.setState({...this.state, fav:!this.state.fav})
     }
 
     render() {
@@ -20,8 +20,8 @@ class Product extends React.Component{
                 <img src={vestido} alt="vestido" />
                 <h3>{this.props.name}</h3>
                 <h3>{this.props.value}</h3>
-                <input type="checkbox" defaultChecked={this.state.check} onChange={() => this.handleChange()}></input>
-                {(this.state.check && <span>Favorito</span> || <span></span>)}
+                <input type="checkbox" defaultChecked={this.state.fav} onChange={() => this.handleChange()}></input>
+                {(this.state.fav && <span>Favorito</span> || <span></span>)}
             </div>
         )
     }
