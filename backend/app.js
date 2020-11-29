@@ -3,29 +3,26 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-
+var cors = require('cors');
 var indexRouter = require('./routes/index');
 var productsRouter = require('./routes/products');
-
 var app = express();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
-
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-
+app.use(cors({ origin: true }));
 app.use('/', indexRouter);
 app.use('/products', productsRouter);
 
 app.use((req, res, next) => {
   res.header("Access-Control-Allow-Origin", "*");
-  res.header("Access-Control-Allow-Origin", 'GET,PUT,POST,DELETE');
-  app.use(cors());
+  res.header("Access-Control-Allow-Origin", 'GET,OPTIONS,PUT,POST,DELETE');
   next();
 });
 

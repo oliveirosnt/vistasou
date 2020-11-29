@@ -1,11 +1,20 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import TopMenu from './TopMenu';
+const axios = require('axios');
 
 function NewProduct() {
 
     const { register, handleSubmit } = useForm();
-    const onSubmit = (data) => alert(JSON.stringify(data));
+    const onSubmit = (data) => postRequest(data)
+
+    async function postRequest(data) {
+
+        let res = await axios.post('http://localhost:3000/products/', data);
+
+        if (res.status === 200) alert(`${res.data.name} adicionado`);
+    }
+
 
     return (
 
@@ -13,10 +22,10 @@ function NewProduct() {
             <TopMenu></TopMenu>
             <form onSubmit={handleSubmit(onSubmit)}>
             <div>
-                <input name="product_name" ref={register} placeholder="Nome do produto" />
+                <input name="name" ref={register} placeholder="Nome do produto" />
             </div>
             <div>
-            <input name="product_price" ref={register} placeholder="Preço" />
+            <input name="price" ref={register} placeholder="Preço" />
             </div>
             <input type="submit" />
             </form>

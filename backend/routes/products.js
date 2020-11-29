@@ -40,8 +40,6 @@ router.get('/:id', function(req, res, next) {
 /* POST: add a new product. */
 router.post('/', function(req, res, next) {
   req.body.id = myProducts.length;
-  req.body.name = "aaa"
-  req.body.price = "bbb"
   myProducts.push(req.body);
   res.json(req.body);
   res.status("201");

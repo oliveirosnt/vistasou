@@ -1,6 +1,7 @@
 import React from 'react';
 import vestido from '../images/vestido.jpg'
 
+
 class Product extends React.Component{
 
     constructor(props) {
@@ -8,7 +9,9 @@ class Product extends React.Component{
         this.state = { 
           fav: false
         };
-      }
+
+
+    }
 
     handleChange() {
         this.setState({...this.state, fav:!this.state.fav})

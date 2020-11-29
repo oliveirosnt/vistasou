@@ -1,30 +1,45 @@
 import React from 'react';
 import Product from './Product';
-
+import api from '../api'
 
 
 class Products extends React.Component {
 
-    renderProduct(_name, _value){
-        return <Product name={_name} value={_value}></Product>
+    state={
+        products:[],
+        search: [],
+        };
+
+    async componentDidMount() {
+        const response = await api.get('products');
+        this.setState({ products: response.data });
+    }
+
+    renderProduct(display) {
+        console.log(display)
+        if (this.state.search.length > 0) {
+
+        return this.state.products.filter(product => product.name.toLowerCase().includes(this.state.search.toLowerCase().trim())).map((product) => (<li>
+            <Product name={product.name} value={product.price}></Product>
+        </li>));
+    }
+        else return this.state.products.map((product) => (<li> <Product name={product.name} value={product.price}></Product> </li>));
+
+    }
+
+    onChange(search) {
+        this.setState({search: search.target.value})
     }
 
     render () {
+
         return (
             <div class="products">
+                <div>
+                    <input name="busca" onChange={event => this.setState({search: event.target.value})} placeholder="Busca" />
+                </div>
                 <ul>
-                    <li>
-                        {this.renderProduct("Vestido Azul", "119,90R$")}
-                    </li>
-                    <li>
-                        {this.renderProduct("Cropped Vermelho", "79,90R$")}
-                    </li>
-                    <li>
-                        {this.renderProduct("Calça Botões", "89,90R$")}
-                    </li>
-                    <li>
-                        {this.renderProduct("Blusa Gola Alta", "69,90R$")}
-                    </li>
+                    {this.renderProduct()}
                 </ul>
             </div>
         )
