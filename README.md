@@ -1,42 +1,14 @@
 # Projeto da disciplina de Princípios DevWeb 2020.0
 Oliveiros Cavalcanti de Oliveira Neto, 117110810
 
-## Comando:
-- Tanto no front quanto no back basta dar um "npm install", depois "npm start" e  por último acessar localhost:3000.
+## Site básico da loja de roupas "SOU."
 
-## Consiste no comercio eletrônico da marca de roupas SOU.
-- A tela inicial terá como base uma loja padrão, com um banner e produtos exibidos;
-- Os produtos devem ter nome, preço e descrição;
-- Usuários podem se cadastrar no site e fazer login para ver seus produtos favoritos;
+- Para rodar o projeto é necessário:
 
-## Lista de implementações:
-- [x] HTML da página mais importante (página inicial);
-- [x] Backend básico;
-- [x] Divisão em componentes usando react da página principal;
-- [x] Um componente afetado por uma prop (Product);
-- [x] Componente com estado interno alterado (Product);
+1 - Rodar o comando "npm install" tanto no frontend quanto no backend;
 
-# Entrega 01:
-- Acessar pasta "/frontend";
-- Abrir o arquivo "vistasou"prototype.html";
-- O html representa a página inicial da loja SOU.
+2 - Adicionar a extensão CORS Unblock no chrome (só consegui usar o express desse jeito).
 
-# Entrega 02:
-- Acessar pasta "/backend";
-- Inicializar aplicação com comando "npm start";
-- O GET de "/users" e "/products" retorna todos os elementos;
-- O POST de "/users" adiciona um usuário na lista de usuários;
+https://chrome.google.com/webstore/detail/cors-unblock/lfhmikememgdcahcdlaciloancbhjino?hl=pt-BR
 
-# Entrega 03:
-- O estado interno do component Product é alterado com o click do checkbox;
-- O componente Product recebe as props (nome e valor) do componente Products;
-
-# Entrega 04:
-- O componente pai "Products" manda de acordo com seu estado as props do componente filho "Product";
-
-# Entrega 05:
-- Não deu pra fazer :(
-
-# Entrega 06:
-- Testes do componente de produto;
-- Pra rodar os testes basta chegar até o diretório do frontend e rodar o comando "npm test";
+3 - Rodar o comando "npm start" tanto no frontend quanto no backend;
