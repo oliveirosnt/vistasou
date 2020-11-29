@@ -1,14 +1,15 @@
 import React from 'react';
-import { Link } from "react-router-dom";
+import { Navbar, Nav } from 'react-bootstrap';
 
 function DownMenu() {
     return (
-        <nav class="down_menu">
-            <ul>
-                <li><a><Link to="/">SOU.</Link></a></li>
-                <li><a><Link to="/about">Sobre nós</Link></a></li>
-            </ul>
-        </nav> 
+        <Navbar bg="light" variant="light">
+        <Navbar.Brand href="/">SOU.</Navbar.Brand>
+        <Nav className="mr-auto">
+            <Nav.Link href="/">Home</Nav.Link>
+            <Nav.Link href="about">Sobre nós</Nav.Link>
+        </Nav>
+        </Navbar>
     )
 }
 

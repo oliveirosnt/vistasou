@@ -1,6 +1,6 @@
 import React from 'react';
 import vestido from '../images/vestido.jpg'
-
+import { Card, Image } from 'react-bootstrap';
 
 class Product extends React.Component{
 
@@ -9,25 +9,22 @@ class Product extends React.Component{
         this.state = { 
           fav: false
         };
-
-
-    }
-
-    handleChange() {
-        this.setState({...this.state, fav:!this.state.fav})
     }
 
     render() {
-        return (
-            <div className="product_01">
-                <img src={vestido} alt="vestido" />
-                <h3>{this.props.name}</h3>
-                <h3>{this.props.value}</h3>
-                <input type="checkbox" defaultChecked={this.state.fav} onChange={() => this.handleChange()}></input>
-                {(this.state.fav && <span>Favorito</span> || <span></span>)}
-            </div>
+        return (            
+            <Card border="success" style={{ width: '18rem' }}>
+                <Card.Img as={Image} src={vestido} fluid={true} alt="Card image" />
+                <Card.Body>
+                    <Card.Title>{this.props.name}</Card.Title>
+                        <Card.Text>
+                            {this.props.value}
+                        </Card.Text>
+                </Card.Body>
+            </Card>
         )
     }
 }
+
 
 export default Product;

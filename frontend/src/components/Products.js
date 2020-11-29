@@ -1,7 +1,7 @@
 import React from 'react';
 import Product from './Product';
 import api from '../api'
-
+import { Row, Col, Container } from 'react-bootstrap';
 
 class Products extends React.Component {
 
@@ -23,7 +23,14 @@ class Products extends React.Component {
             <Product name={product.name} value={product.price}></Product>
         </li>));
     }
-        else return this.state.products.map((product) => (<li> <Product name={product.name} value={product.price}></Product> </li>));
+        else return this.state.products.map((product) => (
+
+            <Col>
+                <Product name={product.name} value={product.price}></Product>
+            </Col>
+
+
+        ));
 
     }
 
@@ -34,14 +41,14 @@ class Products extends React.Component {
     render () {
 
         return (
-            <div class="products">
-                <div>
-                    <input name="busca" onChange={event => this.setState({search: event.target.value})} placeholder="Busca" />
-                </div>
-                <ul>
+            <Container>
+                <Row className="d-flex justify-content-center"> 
+                    <input name="busca" onChange={event => this.setState({search: event.target.value})} placeholder="Buscar produto" />
+                </Row>
+                <Row lg="4" className="d-flex justify-content-center" sm="4">
                     {this.renderProduct()}
-                </ul>
-            </div>
+                </Row>
+            </Container>
         )
     }
 }

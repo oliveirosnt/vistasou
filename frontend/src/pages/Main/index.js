@@ -1,25 +1,32 @@
 import React from 'react';
-import './stylesheet.css';
 import TopMenu from '../../components/TopMenu';
 import Banner from '../../components/Banner';
-import Products from '../../components/Products';
 import DownMenu from '../../components/DownMenu';
+import HighlightsProducts from '../../components/HighlightsProducts'
+import { Container, Row } from 'react-bootstrap';
 
 function Main(){
     return(
         <div>
-
-        <header>
-            <meta charset="utf-8"></meta>
-            <link rel="style" href="stylesheet.css"></link>
-        </header>
-
-        <TopMenu></TopMenu>
-        <Banner></Banner>
-        <Products></Products>
-        <Banner></Banner>
-        <DownMenu></DownMenu>  
-
+            <Container fluid>
+                <Row className="d-flex justify-content-center">
+                    <Row>
+                        <TopMenu></TopMenu>
+                    </Row>
+                    <Row>
+                        <Banner></Banner>
+                    </Row>
+                    <Row>
+                        <HighlightsProducts></HighlightsProducts>
+                    </Row>
+                    <Row>
+                        <Banner></Banner>
+                    </Row>
+                    <Row>
+                        <DownMenu></DownMenu> 
+                    </Row>   
+                </Row>
+            </Container>
         </div>
     );
 };

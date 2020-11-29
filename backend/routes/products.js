@@ -5,22 +5,22 @@ var myProducts = [
   {
     "id": 0,
     "name": "Vestido Azul", 
-    "price": "120"
+    "price": "120,00R$"
   },
   {
     "id": 1,
     "name": "Vestido vermelho", 
-    "price": "120"
+    "price": "120,00R$"
   },
   {
     "id": 2,
     "name": "Vestido rosa", 
-    "price": "120"
+    "price": "120,00R$"
   },
   {
     "id": 3,
     "name": "Vestido cinza", 
-    "price": "120"
+    "price": "120,00R$"
   }
 ];
 

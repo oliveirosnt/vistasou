@@ -1,16 +1,18 @@
 import React from 'react';
-import { Link } from "react-router-dom";
+import { Navbar, Nav } from 'react-bootstrap';
 
 function TopMenu() {
     return (
-        <nav class="top_menu">
-            <ul>
-            <li><a><Link to="/">SOU.</Link></a></li>
-            <li><a><Link to="/catalogue">Catálogo</Link></a></li>
-            <li><a><Link to="/about">Sobre nós</Link></a></li>
-            <li><a><Link to="/newProduct">Cadastrar</Link></a></li>
-            </ul>
-        </nav>
+
+        <Navbar bg="light" variant="light">
+            <Navbar.Brand href="/">SOU.</Navbar.Brand>
+            <Nav className="mr-auto">
+                <Nav.Link href="/">Home</Nav.Link>
+                <Nav.Link href="catalogue">Catálogo</Nav.Link>
+                <Nav.Link href="newProduct">Cadastrar produto</Nav.Link>
+                <Nav.Link href="about">Sobre nós</Nav.Link>
+            </Nav>
+        </Navbar>
     )
 }
 
