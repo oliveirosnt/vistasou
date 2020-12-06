@@ -8,9 +8,9 @@ function TopMenu() {
             <Navbar.Brand href="/">SOU.</Navbar.Brand>
             <Nav className="mr-auto">
                 <Nav.Link href="/">Home</Nav.Link>
-                <Nav.Link href="catalogue">Catálogo</Nav.Link>
-                <Nav.Link href="newProduct">Cadastrar produto</Nav.Link>
-                <Nav.Link href="about">Sobre nós</Nav.Link>
+                <Nav.Link href="/catalogue">Catálogo</Nav.Link>
+                <Nav.Link href="/newProduct">Cadastrar produto</Nav.Link>
+                <Nav.Link href="/about">Sobre nós</Nav.Link>
             </Nav>
         </Navbar>
     )
